@@ -4,18 +4,19 @@ export const theme = extendTheme({
     colors:{
         light: {
             "100": '#FFFFFF',
+            "300": "#EEEFF1"
         },
         gold: {
             "100": "#F5DFB6"
         },
         blue: {
-            "300": "##5360C8"
+            "300": "#5360C8"
         },
         purple: {
             "700": "#473790"
         },
         yellow: {
-            "500": "##F7E340"
+            "500": "#F7E340"
         },
         dark: {
             "800": '#191919'
@@ -30,7 +31,7 @@ export const theme = extendTheme({
                 scrollBehavior: 'smooth'
             },
             body: {
-                bg: 'dark.800',
+                bg: 'light.300',
                 color: 'light.100'
             },
             ul: {
@@ -49,9 +50,6 @@ export const theme = extendTheme({
                     textDecorationColor: 'transparent'
                 }
             },
-            h2: {
-                marginBottom: '50px'
-            }
         }
     }
 })
