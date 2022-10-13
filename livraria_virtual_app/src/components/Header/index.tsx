@@ -2,7 +2,7 @@ import { Flex, HStack, VStack, Text } from "@chakra-ui/react";
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Logo } from "./Logo";
 import { SearchBar } from "./SearchBar";
-import { FaShoppingCart, FaUserAlt } from 'react-icons/fa';
+import { FaHeart, FaShoppingCart, FaUserAlt } from 'react-icons/fa';
 
 export function Header(){
     return(
@@ -14,7 +14,7 @@ export function Header(){
             justifyContent="center"
             padding="32px 0"
         >
-            <HStack width="100%" maxWidth={1440} justifyContent="space-between">
+            <HStack width="100%" maxWidth={1440} justifyContent="space-between" padding="0 15px">
                 <Logo />
                 <SearchBar />
                 <HStack spacing={10}>
@@ -36,6 +36,10 @@ export function Header(){
                         </Flex>
                         <FaShoppingCart fontSize="1.5rem"/>
                         <Text>Minhas Compras</Text>
+                    </VStack>
+                    <VStack>
+                        <FaHeart fontSize="1.5rem"/>
+                        <Text>Lista de Desejos</Text>
                     </VStack>
                     <VStack>
                         <FaUserAlt fontSize="1.5rem"/>
