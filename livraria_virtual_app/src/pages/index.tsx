@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css';
-import { Heading, VStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { NavMenu } from '../components/NavMenu';
+import { Main } from '../components/Main';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +16,7 @@ const Home: NextPage = () => {
       
       <Header />
       <NavMenu />
+      <Main />
     </VStack>
   )
 }
