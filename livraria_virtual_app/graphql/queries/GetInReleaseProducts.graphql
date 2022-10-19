@@ -1,0 +1,36 @@
+query GetInReleaseProducts {
+  collection(slug:"lancamentos", channel:"brasil"){
+    id
+    slug
+    products(first:20){
+      edges{
+        node{
+          id
+          name
+          thumbnail{
+            url
+          }
+          attributes{
+            attribute{
+              name
+            }
+            values{
+              name
+            }
+          }
+          variants{
+          	id
+      			name
+            pricing {
+               price {
+                  gross {
+                     amount
+                  }
+              }
+            }
+        	}
+        }
+      }
+    }
+  }
+}

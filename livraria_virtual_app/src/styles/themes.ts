@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { color, extendTheme } from '@chakra-ui/react';
 
 export const theme = extendTheme({
     colors:{
@@ -7,7 +7,8 @@ export const theme = extendTheme({
             "300": "#EEEFF1"
         },
         gold: {
-            "100": "#F5DFB6"
+            "100": "#F5DFB6",
+            "700": "#F1C65D"
         },
         blue: {
             "300": "#5360C8"
@@ -32,6 +33,11 @@ export const theme = extendTheme({
             },
             body: {
                 bg: 'light.300',
+            },
+            header: {
+                color: 'light.100'
+            },
+            nav: {
                 color: 'light.100'
             },
             ul: {
@@ -41,8 +47,9 @@ export const theme = extendTheme({
             },
             section: {
                 width: '100%',
-                maxWidth: '1440px',
-                padding: "64px 0"
+                maxWidth: '890px',
+                padding: "64px 15px",
+                color: 'black.800',
             },
             a: {
                 _hover: {

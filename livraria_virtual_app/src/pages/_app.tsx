@@ -2,6 +2,7 @@ import { theme } from '../styles/themes';
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react';
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import "../styles/carrossel.css";
 
 const client = new ApolloClient({
   uri: "https://livrariavirtual.saleor.cloud/graphql/",
